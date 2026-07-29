@@ -1,2 +1,65 @@
-# Voice-AI-Assistant
-Voice AI Assistant using Whisper and Cohere API
+# Voice AI Assistant
+
+## وصف المشروع
+
+هذا المشروع عبارة عن مساعد صوتي ذكي باستخدام لغة Python.
+
+يقوم المشروع بالخطوات التالية:
+
+1. تسجيل صوت المستخدم.
+2. تحويل الصوت إلى نص باستخدام Whisper.
+3. إرسال النص إلى Cohere للحصول على إجابة.
+4. حفظ الإجابة في ملف نصي.
+5. تحويل الإجابة إلى صوت وتشغيلها.
+
+---
+
+## الملفات
+
+- main.py : تشغيل المشروع بالكامل.
+- speech_to_text.py : تحويل الصوت إلى نص.
+- ai_response.py : إرسال السؤال إلى Cohere واستقبال الإجابة.
+- text_to_speech.py : تحويل النص إلى صوت.
+- requirements.txt : المكتبات المطلوبة.
+- recognized_text.txt : النص الذي تم التعرف عليه.
+- answer.txt : الإجابة التي تم توليدها.
+
+---
+
+## المكتبات المستخدمة
+
+- openai-whisper
+- cohere
+- python-dotenv
+- sounddevice
+- scipy
+- gtts
+- playsound
+
+---
+
+## طريقة التشغيل
+
+بعد تثبيت المكتبات المطلوبة:
+
+```
+python main.py
+```
+
+ثم:
+
+- يتحدث المستخدم لمدة 5 ثوانٍ.
+- يتم تحويل الكلام إلى نص.
+- يتم إرسال السؤال إلى Cohere.
+- يتم إنشاء الإجابة.
+- يتم تشغيل الإجابة صوتيًا.
+
+---
+
+## التقنيات المستخدمة
+
+- Python
+- Whisper
+- Cohere API
+- Speech Recognition
+- Text To Speech
